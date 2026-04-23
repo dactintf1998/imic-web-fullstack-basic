@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration</h1>
+    <p style="text-align: center;">Filling the form belows:</p>
+    <form action="/action_page.php" style="text-align: center;" method="get" id="form1">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="course">Course:</label><br>
+    <input type="text" id="course" name="course"><br>
+    <button type="submit" form="form1" value="Submit">Submit</button>
+    </form><br>
+    <table>
+  <tr>
+    <th>Course</th>
+    <th>Level</th>
+    <th>Date start</th>
+  </tr>
+  <tr>
+    <td>Fullstack Web API</td>
+    <td>Beginner</td>
+    <td>21/04/2026</td>
+  </tr>
+  <tr>
+    <td>Backend Java</td>
+    <td>Beginner</td>
+    <td>14/04/2026</td>
+  </tr>
+</table>
+</body>
+</html>
