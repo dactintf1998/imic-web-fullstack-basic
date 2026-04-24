@@ -1,50 +1,275 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; 
-}
-table.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Introduction</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      animation: fadeIn 1s ease;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    header p {
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 25px 30px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #444;
+      border-left: 5px solid #667eea;
+      padding-left: 10px;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    thead {
+      background: #667eea;
+      color: white;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #eee;
+      transition: 0.3s;
+    }
+
+    tbody tr:hover {
+      background: #f1f5ff;
+    }
+
+    /* Form Styling */
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input,
+    textarea,
+    select {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #667eea;
+      outline: none;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+
+    button {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f7f7f7;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">Registration</h1>
-    <p style="text-align: center;">Filling the form belows:</p>
-    <form action="/action_page.php" style="text-align: center;" method="get" id="form1">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"><br>
-    <label for="course">Course:</label><br>
-    <input type="text" id="course" name="course"><br>
-    <button type="submit" form="form1" value="Submit">Submit</button>
-    </form><br>
-    <table>
+
+  <div class="container">
+    <!-- Header / Introduction Section -->
+    <header>
+      <h1>👋 Welcome to My Portfolio</h1>
+      <p>Hi! I'm Tin Ho - Aspiring AI Engineer & Web Developer</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Tin Ho</strong>. I am passionate about <strong>AI Engineering</strong> and
+          <strong>Web Development</strong>.
+          I enjoy building innovative projects, solving complex problems, and continuously improving my programming
+          skills.
+          With a focus on full-stack development, I aim to create meaningful digital solutions.
+        </p>
+      </section>
+
+      <!-- Skills Section with Table -->
+      <section id="skills">
+        <h2>My Technical Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Proficiency Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>Machine Learning</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Interested in collaborating or learning more? Fill out the form below and I'll get back to you soon!</p>
+
+        <form action="#" method="POST" onsubmit="return handleFormSubmit(event)">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" placeholder="Your full name" required></td>
+              </tr>
+
+              <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="your.email@example.com" required></td>
+              </tr>
+  </div>
+
   <tr>
-    <th>Course</th>
-    <th>Level</th>
-    <th>Date start</th>
+    <td><label for="phone">Phone Number:</label></td>
+    <td><input type="tel" id="phone" name="phone" placeholder="(optional)"></td>
   </tr>
+
   <tr>
-    <td>Fullstack Web API</td>
-    <td>Beginner</td>
-    <td>21/04/2026</td>
+    <td><label for="reason">Reason for Contact:</label></td>
+    <td>
+      <select id="reason" name="reason" required>
+        <option value="">-- Select an option --</option>
+        <option value="job">Job Opportunity</option>
+        <option value="collaboration">Project Collaboration</option>
+        <option value="mentoring">Mentoring Request</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+    </td>
   </tr>
+
   <tr>
-    <td>Backend Java</td>
-    <td>Beginner</td>
-    <td>14/04/2026</td>
+    <td><label for="message">Message:</label></td>
+    <td>
+      <textarea id="message" name="message" placeholder="Your message here..." rows="2" required></textarea>
+    </td>
   </tr>
-</table>
+  </tbody>
+  </table>
+  <button type="submit">Send Message</button>
+  <button type="reset">Clear Form</button>
+  </form>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Tin Ho. All rights reserved. | Last updated: April 24, 2026</p>
+  </footer>
+  </div>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const fullname = document.getElementById('fullname').value;
+      alert(`Thank you, ${fullname}! Your message has been received.`);
+      event.target.reset();
+    }
+  </script>
+
 </body>
+
 </html>
